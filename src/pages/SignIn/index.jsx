@@ -1,15 +1,13 @@
 import { Container, Form } from "./styles";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
-import Logo from "../../assets/logoComplete.png";
+import { Logotype } from "../../components/Logotype";
 
 export function SignIn() {
   return (
     <Container>
+      <Logotype size={270} />
       <Form>
-        <div className="logo">
-          <img src={Logo} alt="Blue polygon logo" />
-        </div>
         <div className="input-wrapper">
           <div className="input-container">
             <label htmlFor="email">Email</label>

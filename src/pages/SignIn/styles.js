@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex: 1;
+  justify-content: center;
 `;
 
 export const Form = styled.form`
@@ -23,18 +24,13 @@ export const Form = styled.form`
     line-height: 24px;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
   }
-  .logo {
-    display: flex;
-    margin-bottom: 70px;
 
-    > h1 {
-      margin-left: 8px;
-    }
-  }
   .input-wrapper {
     width: 316px;
     display: grid;
     gap: 32px;
+    margin-top: 70px;
+
     align-items: center;
   }
   .input-container {
