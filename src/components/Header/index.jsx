@@ -1,5 +1,4 @@
 import { Container, ReceiptButton } from "./styles";
-import { GoSearch } from "react-icons/go";
 import { FiMenu } from "react-icons/fi";
 import { Logotype } from "../Logotype";
 import Receipt from "../../assets/Receipt.svg";
@@ -9,7 +8,7 @@ export function Header() {
     <Container>
       <div className="test">
         <FiMenu color="white" />
-        <Logotype size={150} />
+        <Logotype size={170} />
         <ReceiptButton>
           <a href="#">
             <img src={Receipt} alt="receipt image" />
