@@ -9,3 +9,7 @@ export function Logotype({ size }) {
     </Container>
   );
 }
+
+Logotype.propTypes = {
+  size: PropTypes.number.isRequired,
+};
