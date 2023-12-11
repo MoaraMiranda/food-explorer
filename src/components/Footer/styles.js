@@ -12,11 +12,11 @@ export const Container = styled.div`
   width: 100%;
 
   > img {
-    width: 120px;
+    width: 130px;
     height: fit-content;
   }
   > span {
     font-size: 12px;
-    color: ${({ theme }) => theme.COLORS.LIGHT_300};
+    color: ${({ theme }) => theme.COLORS.LIGHT_400};
   }
 `;
