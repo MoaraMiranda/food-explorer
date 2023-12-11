@@ -29,9 +29,10 @@ export default {
     MINT_100: "#04D361",
 
     CAKE_100: "#065E7C",
-    CAKE_100: "#82F3FF",
+    CAKE_200: "#82F3FF",
   },
   RADIUS: {
     SM: "5px",
+    MD: "8px",
   },
 };
