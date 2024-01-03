@@ -33,21 +33,24 @@ export const Container = styled.div`
     width: 24px;
     height: 24px;
   }
-  span {
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    line-height: 16px;
-  }
-
+  
   .heart {
     position: absolute;
     top: 10px;
     right: 10px;
+  
   }
   .quantity {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 14px;
+    font-size: 1.2rem;
+    
+    > span {
+      font-size: 1rem;
+      font-family: "Roboto", sans-serif;
+      line-height: 16px;
+    }
   }
 `;
