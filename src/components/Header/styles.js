@@ -8,12 +8,14 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 
   .test {
     width: 100%;
     display: flex;
     justify-content: space-around;
-
     align-items: center;
   }
 `;
