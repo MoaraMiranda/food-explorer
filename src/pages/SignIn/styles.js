@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints"
+import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
   height: 100vh;
@@ -40,11 +40,14 @@ export const Form = styled.form`
     width: 316px;
     display: grid;
     gap: 32px;
-    margin-top: 70px;
+    margin-top: 60px;
     align-items: center;
 
     @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
       margin-top: 0;
+    }
+    @media (max-width: ${DEVICE_BREAKPOINTS.XS}) {
+      width: 250px;
     }
   }
   .input-container {
