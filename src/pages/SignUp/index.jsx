@@ -6,7 +6,7 @@ import { Logotype } from "../../components/Logotype";
 export function SignUp() {
   return (
     <Container>
-      <Logotype size={270} />
+      <Logotype size={230} desktopSize={300} />
       <Form>
         <div className="input-wrapper">
           <div className="input-container">
