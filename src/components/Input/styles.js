@@ -8,6 +8,9 @@ export const Container = styled.div`
   align-items: center;
   flex: 1;
 
+  > svg {
+    margin-left: 14px;
+  }
   > input {
     height: 48px;
     width: 100%;
