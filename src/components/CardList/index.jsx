@@ -12,7 +12,7 @@ export function CardList({ title }) {
     },
     {
       name: "Parma toast",
-      id: 1,
+      id: 2,
       price: "10,00",
       image: "??",
       description: "plate description",
@@ -23,7 +23,7 @@ export function CardList({ title }) {
       <h2>{title}</h2>
       <div className="list">
         {products.map((product) => (
-          <Card {...product} />
+          <Card key={product.id} {...product} />
         ))}
       </div>
     </Container>
