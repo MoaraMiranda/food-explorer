@@ -1,9 +1,10 @@
 import { Container } from "./styles";
+import Receipt from "../../assets/Receipt.svg";
 
-export function Button({ icon: Icon, title, ...rest }) {
+export function Button({ order, title, ...rest }) {
   return (
     <Container {...rest}>
-      {Icon && <Icon size={18} />}
+      {order && <img src={Receipt} alt="receipt image" />}
       {title}
     </Container>
   );
