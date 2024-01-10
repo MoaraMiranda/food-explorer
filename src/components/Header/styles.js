@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_700};
@@ -12,11 +13,33 @@ export const Container = styled.div`
   top: 0;
   z-index: 99;
 
-  .test {
+  svg {
+    width: 2rem;
+    height: 1.5rem;
+  }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
+  }
+  .button {
+    @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+      display: none;
+    }
+  }
+
+  .content {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
+      justify-content: center;
+      gap: 40px;
+
+      > svg {
+        display: none;
+      }
+    }
   }
 `;
 
@@ -26,14 +49,18 @@ export const ReceiptButton = styled.div`
   align-items: center;
   position: relative;
 
+  @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
+    display: none;
+  }
+
   > a {
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
-    width: 26px;
-    height: 26px;
+    width: 2.2rem;
+    height: 2.2rem;
 
     > img {
-      width: 26px;
-      height: 26px;
+      width: 2.2rem;
+      height: 2.2rem;
     }
   }
 
