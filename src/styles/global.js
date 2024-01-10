@@ -8,7 +8,7 @@ export default createGlobalStyle`
 }
 
 :root{
-  font-size: 14px;
+  font-size: 12px;
   
   @media(min-width: ${DEVICE_BREAKPOINTS.MD}) {
     body{
