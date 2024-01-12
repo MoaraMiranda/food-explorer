@@ -5,12 +5,12 @@ export const Container = styled.button`
   background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
   border-radius: ${({ theme }) => theme.RADIUS.SM};
   padding: 12px 24px;
-  text-align: center;
   border: none;
   font-weight: 500;
   line-height: 24px;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   > img {
     width: 20px;
