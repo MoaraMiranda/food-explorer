@@ -3,7 +3,7 @@ import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
   display: none;
-  width: 40rem;
+  flex: 1;
 
   @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
     display: block;
