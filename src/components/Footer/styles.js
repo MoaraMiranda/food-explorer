@@ -18,7 +18,6 @@ export const Container = styled.div`
     flex: 1;
 
     @media (min-width: ${DEVICE_BREAKPOINTS.MD}) {
-      padding: 0 70px;
       justify-content: space-between;
     }
 
