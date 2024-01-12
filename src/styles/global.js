@@ -50,5 +50,6 @@ button, input {
 
 .containerWrapper{
   max-width: ${DEVICE_BREAKPOINTS.XL};
+  padding:0 40px;
 }
 `;
