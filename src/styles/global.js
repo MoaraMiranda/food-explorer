@@ -48,4 +48,7 @@ button, input {
 
 }
 
+.containerWrapper{
+  max-width: ${DEVICE_BREAKPOINTS.XL};
+}
 `;
