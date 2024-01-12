@@ -18,11 +18,10 @@ export const Container = styled.div`
     height: 1.5rem;
   }
 
-  @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
-  }
   .button {
-    @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-      display: none;
+    display: none;
+    @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
+      display: flex;
     }
   }
 
@@ -33,17 +32,23 @@ export const Container = styled.div`
     align-items: center;
 
     @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
-      justify-content: center;
       gap: 40px;
-
+      padding: 0 40px;
       > svg {
         display: none;
       }
     }
   }
+
+  .searchDesktop {
+    display: none;
+    @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
+      display: block;
+    }
+  }
 `;
 
-export const ReceiptButton = styled.div`
+export const ReceiptButtonMobile = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,5 +83,19 @@ export const ReceiptButton = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+`;
+
+export const SignOut = styled.div`
+  width: 32px;
+  height: 32px;
+  display: none;
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
+    display: block;
+  }
+  > a {
+    width: 32px;
+    height: 32px;
   }
 `;

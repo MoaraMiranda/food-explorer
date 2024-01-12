@@ -1,26 +1,32 @@
-import { Container, ReceiptButton } from "./styles";
+import { Container, ReceiptButtonMobile, SignOut } from "./styles";
 import { FiMenu } from "react-icons/fi";
 import { Logotype } from "../Logotype";
 import Receipt from "../../assets/Receipt.svg";
 import { Button } from "../Button";
 import { Search } from "../Search";
+import SignOutButton from "../../assets/SignOutButton.svg";
 
 export function Header() {
   return (
     <Container>
-      <div className="content">
+      <div className="content containerWrapper">
         <FiMenu color="white" />
         <Logotype size={12} desktopSize={15} />
-        <Search />
-        <ReceiptButton>
+        <Search className="searchDesktop" />
+        <ReceiptButtonMobile>
           <a href="#">
             <img src={Receipt} alt="receipt image" />
             <div className="numberOfOrders">
               <span>1</span>
             </div>
           </a>
-        </ReceiptButton>
+        </ReceiptButtonMobile>
         <Button title="Orders (0)" order className="button" />
+        <SignOut>
+          <a>
+            <img src={SignOutButton} alt="Sign Out Button" />
+          </a>
+        </SignOut>
       </div>
     </Container>
   );
