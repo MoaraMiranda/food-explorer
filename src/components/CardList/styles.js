@@ -18,6 +18,5 @@ export const Container = styled.div`
   > .list {
     display: flex;
     gap: 16px;
-    padding-left: 24px;
   }
 `;
