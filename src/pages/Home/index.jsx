@@ -10,10 +10,12 @@ export function Home() {
       <Header />
       <Content className="containerWrapper">
         <BannerSection>
-          <img src={bannerImg} alt="Macarons image" />
+          <div className="containerImg">
+            <img src={bannerImg} alt="Macarons image" />
+          </div>
           <div>
-          <h1>Unbelievable tastes</h1>
-          <p>Feel the care of preparation with selected ingredients.</p>
+            <h1>Unbelievable tastes</h1>
+            <p>Feel the care of preparation with selected ingredients.</p>
           </div>
         </BannerSection>
         <CardList title="Meals" />
