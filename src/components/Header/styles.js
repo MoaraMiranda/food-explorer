@@ -28,7 +28,7 @@ export const Container = styled.div`
   .content {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
