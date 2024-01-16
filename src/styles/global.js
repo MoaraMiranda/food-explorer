@@ -18,6 +18,7 @@ export default createGlobalStyle`
 }
 
 body{
+  min-width: 375px;
   background-color: ${({ theme }) => theme.COLORS.DARK_400};
   color: ${({ theme }) => theme.COLORS.LIGHT_100}
 }
