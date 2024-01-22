@@ -3,7 +3,7 @@ import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
   height: 100vh;
-  `;
+`;
 
 export const Content = styled.div`
   display: flex;
@@ -15,7 +15,7 @@ export const Content = styled.div`
   > img {
     width: 264px;
     height: 264px;
-    margin:0 auto; 
+    margin: 0 auto;
   }
 
   > h1 {
@@ -37,8 +37,10 @@ export const Content = styled.div`
     justify-content: center;
     gap: 2rem;
   }
-`;
 
-// export const Quantity = styled.div`
-// background-color: red;
-// `
+  .tags-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 12px;
+  }
+`;
