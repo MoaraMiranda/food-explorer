@@ -6,7 +6,7 @@ import { BackLink } from "../../../components/BackLink";
 import { Tag } from "../../../components/Tag";
 import { BiArrowBack } from "react-icons/bi";
 import { Container, Content } from "./styles";
-import RavanelloDish from "../../assets/RavanelloDish.png";
+import RavanelloDish from "../../../assets/RavanelloDish.png";
 
 export function DishDetails() {
   return (
