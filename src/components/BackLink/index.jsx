@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 export function BackLink({ title, icon: Icon, route }) {
   return (
     <Container>
-      <a>
+      <Link to="/">
         <Icon size={16} />
         {title}
-      </a>
+      </Link>
     </Container>
   );
 }
