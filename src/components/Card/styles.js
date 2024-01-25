@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled(Link)`
   background-color: ${({ theme }) => theme.COLORS.DARK_200};
   display: flex;
   flex-direction: column;
@@ -23,7 +24,7 @@ export const Container = styled.div`
 
   > h2 {
     color: ${({ theme }) => theme.COLORS.CAKE_200};
-    font-size: 16px;
+    font-size: 1.2rem;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
     text-align: center;
@@ -32,13 +33,13 @@ export const Container = styled.div`
   > svg {
     width: 24px;
     height: 24px;
+    color: ${({ theme }) => theme.COLORS.LIGHT_300};
   }
-  
+
   .heart {
     position: absolute;
     top: 10px;
     right: 10px;
-  
   }
   .quantity {
     display: flex;
@@ -46,9 +47,9 @@ export const Container = styled.div`
     align-items: center;
     gap: 14px;
     font-size: 1.2rem;
-    
+
     > span {
-      font-size: 1rem;
+      color: ${({ theme }) => theme.COLORS.LIGHT_300};
       font-family: "Roboto", sans-serif;
       line-height: 16px;
     }

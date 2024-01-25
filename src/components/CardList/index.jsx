@@ -23,7 +23,7 @@ export function CardList({ title }) {
       <h2>{title}</h2>
       <div className="list">
         {products.map((product) => (
-          <Card key={product.id} {...product} />
+          <Card to="/dish-details/1" key={product.id} {...product} />
         ))}
       </div>
     </Container>
