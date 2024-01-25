@@ -2,11 +2,12 @@ import { Container, Form } from "./styles";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { Logotype } from "../../components/Logotype";
+import { Link } from "react-router-dom";
 
 export function SignUp() {
   return (
     <Container>
-      <Logotype size={230} desktopSize={300} />
+      <Logotype size={20} desktopSize={40} />
       <Form>
         <div className="input-wrapper">
           <div className="input-container">
@@ -31,7 +32,7 @@ export function SignUp() {
           </div>
           <Button title="Create account" />
         </div>
-        <a href="#">I already have an account</a>
+        <Link to="/">I already have an account</Link>
       </Form>
     </Container>
   );

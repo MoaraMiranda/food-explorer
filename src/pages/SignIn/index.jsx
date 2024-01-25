@@ -1,4 +1,5 @@
 import { Container, Form } from "./styles";
+import { Link } from "react-router-dom";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { Logotype } from "../../components/Logotype";
@@ -6,7 +7,7 @@ import { Logotype } from "../../components/Logotype";
 export function SignIn() {
   return (
     <Container>
-      <Logotype size={230} desktopSize={300} />
+      <Logotype size={20} desktopSize={40} />
       <Form>
         <div className="input-wrapper">
           <div className="input-container">
@@ -27,7 +28,7 @@ export function SignIn() {
           </div>
           <Button title="Login" />
         </div>
-        <a href="#">Create your account</a>
+        <Link to="/register">Create your account</Link>
       </Form>
     </Container>
   );
