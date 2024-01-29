@@ -6,21 +6,23 @@ import { Button } from "../Button";
 import { Search } from "../Search";
 import SignOutButton from "../../assets/SignOutButton.svg";
 
-export function Header() {
+export function Header({ isAdmin }) {
   return (
     <Container>
       <div className="content containerWrapper">
         <FiMenu color="white" />
-        <Logotype size={12} desktopSize={15} />
+        <Logotype size={13} desktopSize={15} isAdmin={isAdmin} />
         <Search className="searchDesktop" />
-        <ReceiptButtonMobile>
-          <a href="#">
-            <img src={Receipt} alt="receipt image" />
-            <div className="numberOfOrders">
-              <span>1</span>
-            </div>
-          </a>
-        </ReceiptButtonMobile>
+        {!isAdmin && (
+          <ReceiptButtonMobile>
+            <a href="#">
+              <img src={Receipt} alt="receipt image" />
+              <div className="numberOfOrders">
+                <span>1</span>
+              </div>
+            </a>
+          </ReceiptButtonMobile>
+        )}
         <Button title="Orders (0)" order className="button" />
         <SignOut>
           <a>

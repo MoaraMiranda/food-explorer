@@ -13,9 +13,8 @@ export const Container = styled(Link)`
   > h1 {
     color: ${({ theme }) => theme.COLORS.LIGHT_300};
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 500;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -24,34 +23,30 @@ export const Container = styled(Link)`
 
   > h2 {
     color: ${({ theme }) => theme.COLORS.CAKE_200};
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
     text-align: center;
   }
 
-  > svg {
+  .icon {
     width: 24px;
     height: 24px;
     color: ${({ theme }) => theme.COLORS.LIGHT_300};
-  }
-
-  .heart {
     position: absolute;
     top: 10px;
     right: 10px;
   }
-  .quantity {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-    font-size: 1.2rem;
 
-    > span {
-      color: ${({ theme }) => theme.COLORS.LIGHT_300};
-      font-family: "Roboto", sans-serif;
-      line-height: 16px;
-    }
+  > .dish-image {
+    min-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  > span {
+    color: ${({ theme }) => theme.COLORS.LIGHT_300};
+    font-family: "Roboto", sans-serif;
+    line-height: 16px;
   }
 `;
