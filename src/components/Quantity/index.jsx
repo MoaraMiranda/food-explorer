@@ -5,7 +5,7 @@ import { FaMinus } from "react-icons/fa6";
 export function Quantity() {
   return (
     <Container>
-      <FaMinus />
+      <FaMinus color="white" />
       <span>01</span>
       <FaPlus color="white" />
     </Container>
