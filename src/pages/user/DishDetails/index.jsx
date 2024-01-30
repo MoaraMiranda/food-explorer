@@ -13,7 +13,7 @@ export function DishDetails() {
     <Container>
       <Header />
       <Content className="containerWrapper">
-        <BackLink title="Back" icon={BiArrowBack} />
+        <BackLink title="Back" icon={BiArrowBack} route="/" />
         <img src={RavanelloDish} />
         <h1>Ravanello Salad</h1>
         <p>
