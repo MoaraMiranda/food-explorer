@@ -7,7 +7,7 @@ import bannerImg from "../../../assets/macaron.png";
 export function Home() {
   return (
     <Container>
-      <Header isAdmin/>
+      <Header isAdmin />
       <Content className="containerWrapper">
         <BannerSection>
           <div className="containerImg">
@@ -18,9 +18,9 @@ export function Home() {
             <p>Feel the care of preparation with selected ingredients.</p>
           </div>
         </BannerSection>
-        <CardList title="Meals" isAdmin/>
+        <CardList title="Meals" isAdmin />
         <CardList title="Main Dishes" />
-        <CardList title="Favorites" />
+        <CardList title="Favorites" isAdmin />
       </Content>
       <Footer />
     </Container>

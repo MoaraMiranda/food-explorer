@@ -8,14 +8,13 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 24px;
   margin: 0 auto;
 `;
 
 export const BannerSection = styled.div`
   display: flex;
   height: 120px;
-  margin-top: 44px;
+  margin: 38px 0;
   background: linear-gradient(180deg, #091e26 0%, #00131c 100%);
   position: relative;
   width: 100%;
