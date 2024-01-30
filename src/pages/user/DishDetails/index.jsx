@@ -4,7 +4,6 @@ import { Footer } from "../../../components/Footer";
 import { Quantity } from "../../../components/Quantity";
 import { BackLink } from "../../../components/BackLink";
 import { Tag } from "../../../components/Tag";
-import { BiArrowBack } from "react-icons/bi";
 import { Container, Content } from "./styles";
 import RavanelloDish from "../../../assets/RavanelloDish.png";
 
@@ -13,7 +12,7 @@ export function DishDetails() {
     <Container>
       <Header />
       <Content className="containerWrapper">
-        <BackLink title="Back" icon={BiArrowBack} route="/" />
+        <BackLink title="Back" route="/" />
         <img src={RavanelloDish} />
         <h1>Ravanello Salad</h1>
         <p>
