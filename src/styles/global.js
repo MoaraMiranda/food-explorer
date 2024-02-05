@@ -21,7 +21,7 @@ body{
   color: ${({ theme }) => theme.COLORS.LIGHT_100}
 }
 
-body, input {
+body, input, textarea {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   outline: none;
