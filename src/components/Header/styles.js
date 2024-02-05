@@ -13,7 +13,7 @@ export const Container = styled.div`
   top: 0;
   z-index: 99;
 
-  svg {
+  .menu-icon {
     width: 2rem;
     height: 1.5rem;
   }

@@ -10,7 +10,7 @@ export function Header({ isAdmin }) {
   return (
     <Container>
       <div className="content containerWrapper">
-        <FiMenu color="white" />
+        <FiMenu color="white" className="menu-icon" />
         <Logotype size={13} desktopSize={15} isAdmin={isAdmin} />
         <Search className="searchDesktop" />
         {!isAdmin && (

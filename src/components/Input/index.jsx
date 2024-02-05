@@ -1,10 +1,13 @@
-import { Container } from "./styles";
+import { Background, Container } from "./styles";
 
-export function Input({ icon: Icon, ...rest }) {
+export function Input({ icon: Icon, title, label, ...rest }) {
   return (
     <Container>
-      {Icon && <Icon size={18} />}
-      <input {...rest} />
+      {label && <label htmlFor={rest.id}>{title}</label>}
+      <Background>
+        {Icon && <Icon size={24} />}
+        <input {...rest} />
+      </Background>
     </Container>
   );
 }
