@@ -1,11 +1,14 @@
 import { Container } from "./styles";
-import Image from "../../assets/image-download.svg";
+import ImageDownload from "../../assets/image-download.svg";
 
 export function DownloadImageButton({ order, title, ...rest }) {
   return (
     <Container {...rest}>
-      <img src={Image} alt="receipt image" />
-      {title}
+      <label htmlFor="download-image">Dish image</label>
+      <button id="download-image">
+        <img src={ImageDownload} alt="receipt image" />
+        {title}
+      </button>
     </Container>
   );
 }
