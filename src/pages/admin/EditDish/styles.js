@@ -46,5 +46,11 @@ export const Form = styled.form`
         font-weight: 400;
       }
     }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+      gap: 32px;
+      margin-bottom: 100px;
+    }
   }
 `;

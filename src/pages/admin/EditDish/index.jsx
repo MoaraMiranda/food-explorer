@@ -10,6 +10,8 @@ import { Container, Content, Form } from "./styles";
 import { DropdownList } from "../../../components/DropdownList";
 
 export function EditDish() {
+  const categories = ["Snack", "Main dishes", "Desserts"];
+
   return (
     <Container>
       <Header isAdmin />
@@ -26,7 +28,7 @@ export function EditDish() {
               title="Name"
               label
             />
-            <DropdownList />
+            <DropdownList options={categories} label="Dishes Category" />
             <section className="add-ingredients-section">
               <h2>Ingredients</h2>
               <div className="tags">
@@ -44,7 +46,10 @@ export function EditDish() {
               label
             />
             <Textarea />
-            <Button title="Save" />
+            <div className="buttons">
+              <Button title="Delete Dish" />
+              <Button title="Save" $saveButton />
+            </div>
           </fieldset>
         </Form>
       </Content>
