@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.button`
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
-  background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
+  background-color: ${({ theme, $saveButton }) =>
+    $saveButton ? theme.COLORS.TOMATO_400 : theme.COLORS.TOMATO_100};
   border-radius: ${({ theme }) => theme.RADIUS.SM};
   padding: 12px 24px;
   border: none;
