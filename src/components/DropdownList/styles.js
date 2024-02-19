@@ -18,8 +18,12 @@ export const Container = styled.div`
     font-size: 1.2rem;
   }
 
+  .custom-select.open select {
+    background-color: ${({ theme }) => theme.COLORS.DARK_900};
+  }
+
   select {
-    background: transparent;
+    background: ${({ theme }) => theme.COLORS.DARK_900};
     color: ${({ theme }) => theme.COLORS.LIGHT_400};
     border: none;
     width: 100%;
