@@ -14,7 +14,7 @@ import { DropdownList } from "../../../components/DropdownList";
 export function NewDish() {
   const categories = ["Snack", "Main dishes", "Desserts"];
   const [category, setCategory] = useState();
-  
+
   return (
     <Container>
       <Header isAdmin />
@@ -31,7 +31,7 @@ export function NewDish() {
               title="Name"
               label
             />
-            <DropdownList options={categories} label="Dishes Category"/>
+            <DropdownList options={categories} label="Dishes Category" />
             <section className="add-ingredients-section">
               <h2>Ingredients</h2>
               <div className="tags">
