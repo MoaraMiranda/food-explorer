@@ -9,6 +9,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin: 0 auto;
 `;
 
 export const Form = styled.form`
@@ -18,6 +19,18 @@ export const Form = styled.form`
     display: grid;
     gap: 24px;
     border: none;
+
+    @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
+      grid-template-columns: repeat(3, 1fr);
+
+      #ingredients {
+        grid-column: 1 / 3;
+      }
+
+      #description {
+        grid-column: 1 / 4;
+      }
+    }
 
     > legend {
       font-family: "Poppins", sans-serif;
@@ -44,6 +57,16 @@ export const Form = styled.form`
         font-size: 1.3rem;
         color: ${({ theme }) => theme.COLORS.LIGHT_400};
         font-weight: 400;
+      }
+    }
+
+    .save-button {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+      margin-bottom: 100px;
+
+      @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
+        grid-column: 3 / 4;
       }
     }
   }

@@ -31,8 +31,12 @@ export function NewDish() {
               title="Name"
               label
             />
-            <DropdownList options={categories} label="Dishes Category" />
-            <section className="add-ingredients-section">
+            <DropdownList
+              id="category"
+              options={categories}
+              label="Dishes Category"
+            />
+            <section id="ingredients" className="add-ingredients-section">
               <h2>Ingredients</h2>
               <div className="tags">
                 <TagsController $isNew placeholder="Add" />
@@ -48,8 +52,10 @@ export function NewDish() {
               title="Price"
               label
             />
-            <Textarea />
-            <Button title="Save" />
+            <Textarea id="description" />
+            <div className="save-button">
+              <Button title="Save" />
+            </div>
           </fieldset>
         </Form>
       </Content>
