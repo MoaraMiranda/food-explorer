@@ -20,6 +20,7 @@ export function EditDish() {
         <Form className="form-container">
           <fieldset>
             <legend>Edit Dish</legend>
+
             <DownloadImageButton id="image" title="Select Image" />
             <Input
               id="name"
@@ -28,8 +29,13 @@ export function EditDish() {
               title="Name"
               label
             />
-            <DropdownList options={categories} label="Dishes Category" />
-            <section className="add-ingredients-section">
+            <DropdownList
+              id="category"
+              options={categories}
+              label="Dishes Category"
+            />
+
+            <section id="ingredients" className="add-ingredients-section">
               <h2>Ingredients</h2>
               <div className="tags">
                 <TagsController $isNew placeholder="Add" />
@@ -45,7 +51,8 @@ export function EditDish() {
               title="Price"
               label
             />
-            <Textarea />
+            <Textarea id="description" />
+
             <div className="buttons">
               <Button title="Delete Dish" />
               <Button title="Save" $saveButton />
