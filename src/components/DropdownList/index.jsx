@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "./styles";
 
-export function DropdownList({ options, label }) {
+export function DropdownList({ options, label, ...rest }) {
   const [optionSelected, setOptionSelected] = useState(options[0]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -14,7 +14,7 @@ export function DropdownList({ options, label }) {
   };
 
   return (
-    <Container>
+    <Container {...rest}>
       <label htmlFor="selection">{label}</label>
       <div className={`custom-select ${isDropdownOpen ? "open" : ""}`}>
         <select

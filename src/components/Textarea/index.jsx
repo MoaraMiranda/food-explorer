@@ -1,8 +1,8 @@
 import { Container } from "./styles";
 
-export function Textarea() {
+export function Textarea({...rest}) {
   return (
-    <Container>
+    <Container {...rest}>
       <label htmlFor="dish-description">Description</label>
       <textarea
         placeholder="Briefly discuss the dish, its ingredients, and composition."

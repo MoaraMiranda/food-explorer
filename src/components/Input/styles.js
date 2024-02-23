@@ -23,7 +23,7 @@ export const Background = styled.div`
   }
 
   > input {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     height: 48px;
     width: 100%;
     padding: 12px 14px;
@@ -33,7 +33,7 @@ export const Background = styled.div`
 
     &::placeholder {
       color: ${({ theme }) => theme.COLORS.LIGHT_500};
-      font-size: 1.3rem;
+      font-size: 1.1rem;
     }
   }
 `;

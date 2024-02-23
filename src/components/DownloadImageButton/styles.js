@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
   display: flex;
@@ -22,6 +23,10 @@ export const Container = styled.div`
     align-items: center;
     justify-content: flex-start;
     width: 100%;
+
+    @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
+      height: 60px;
+    }
 
     > img {
       width: 20px;

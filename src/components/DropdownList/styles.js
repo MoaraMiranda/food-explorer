@@ -16,6 +16,7 @@ export const Container = styled.div`
     position: relative;
     padding: 16px;
     font-size: 1.2rem;
+    border-radius: ${({ theme }) => theme.RADIUS.MD};
   }
 
   .custom-select.open select {

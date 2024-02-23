@@ -11,7 +11,7 @@ export function Header({ isAdmin }) {
     <Container>
       <div className="content containerWrapper">
         <FiMenu color="white" className="menu-icon" />
-        <Logotype size={13} desktopSize={15} isAdmin={isAdmin} />
+        <Logotype size={13} desktopSize={16} isAdmin={isAdmin} />
         <Search className="searchDesktop" />
         {!isAdmin && (
           <ReceiptButtonMobile>
@@ -23,7 +23,12 @@ export function Header({ isAdmin }) {
             </a>
           </ReceiptButtonMobile>
         )}
-        <Button title="Orders (0)" order className="button" />
+        {!isAdmin ? (
+          <Button title="Orders (0)" order className="button" />
+        ) : (
+          <Button title="New Dish" className="button" />
+        )}
+
         <SignOut>
           <a>
             <img src={SignOutButton} alt="Sign Out Button" />
