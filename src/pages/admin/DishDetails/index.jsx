@@ -13,14 +13,20 @@ export function DishDetails() {
       <Header isAdmin />
       <Content className="containerWrapper">
         <BackLink title="Back" route="/admin" />
-        <img src={RavanelloDish} />
-        <h1>Ravanello Salad</h1>
-        <p>
-          Radishes, green leaves, and sweet and sour sauce sprinkled with sesame
-          seeds.
-        </p>
-        <TagsGroup />
-        <Button title="Edit dish" />
+        <div className="content-section">
+          <img src={RavanelloDish} />
+          <div className="dish-details">
+            <h1>Ravanello Salad</h1>
+            <p>
+              Radishes, green leaves, and sweet and sour sauce sprinkled with
+              sesame seeds.
+            </p>
+            <TagsGroup />
+            <div >
+            <Button title="Edit dish" />
+            </div>
+          </div>
+        </div>
       </Content>
       <Footer />
     </Container>

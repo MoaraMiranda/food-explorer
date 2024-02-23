@@ -37,4 +37,24 @@ export const Content = styled.div`
     justify-content: space-around;
     margin-bottom: 12px;
   }
+
+  @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
+    .content-section{
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+    }
+
+    .dish-details {
+      display: flex;
+      flex-direction: column;
+      max-width: 690px;
+      gap: 24px;
+    }
+
+    img {
+      width: 390px;
+      height: 390px;
+    }
+  }
 `;
