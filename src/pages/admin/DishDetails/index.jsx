@@ -7,7 +7,16 @@ import { Container, Content } from "./styles";
 import RavanelloDish from "../../../assets/RavanelloDish.png";
 import { TagsGroup } from "../../../components/TagsGroup";
 
+import { useNavigate } from "react-router-dom";
+
 export function DishDetails() {
+  const navigate = useNavigate();
+
+  function handleRoute(e) {
+    e.preventDefault();
+    navigate("/admin/edit-dish");
+  }
+
   return (
     <Container>
       <Header isAdmin />
@@ -22,8 +31,8 @@ export function DishDetails() {
               sesame seeds.
             </p>
             <TagsGroup />
-            <div >
-            <Button title="Edit dish" />
+            <div className="button-section">
+              <Button title="Edit dish" onClick={handleRoute} />
             </div>
           </div>
         </div>
