@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-top: 24px;
 
   > a {

@@ -19,7 +19,7 @@ export function Home() {
           </div>
         </BannerSection>
         <CardList title="Meals" isAdmin />
-        <CardList title="Main Dishes" />
+        <CardList title="Main Dishes" isAdmin />
         <CardList title="Favorites" isAdmin />
       </Content>
       <Footer />

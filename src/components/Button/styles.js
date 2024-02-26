@@ -12,6 +12,7 @@ export const Container = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 
   > img {
     width: 20px;

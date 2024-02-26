@@ -1,4 +1,5 @@
 import { Container, ReceiptButtonMobile, SignOut } from "./styles";
+import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { Logotype } from "../Logotype";
 import Receipt from "../../assets/Receipt.svg";
@@ -23,16 +24,18 @@ export function Header({ isAdmin }) {
             </a>
           </ReceiptButtonMobile>
         )}
-        {!isAdmin ? (
-          <Button title="Orders (0)" order className="button" />
-        ) : (
-          <Button title="New Dish" className="button" />
-        )}
-
+        <div>
+          {!isAdmin ? (
+            <Button title="Orders (0)" order className="button" />
+          ) : (
+            <Button title="New Dish" className="button" />
+          )}
+        </div>
         <SignOut>
-          <a>
+          {/* todo - arrumar o link para funcionar com a AuthRoute */}
+          <Link to={"/"}>
             <img src={SignOutButton} alt="Sign Out Button" />
-          </a>
+          </Link>
         </SignOut>
       </div>
     </Container>
